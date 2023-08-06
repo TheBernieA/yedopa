@@ -1,0 +1,25 @@
+.on-sale__container {
+    width: 100%;
+    height: 90vh;
+    background: rgb(242, 0, 255);
+    .on-sale__wrapper {
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      .on-sale__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h4 {
+          margin-bottom: 1rem;
+        }
+      }
+      .on-sale__carousel {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
