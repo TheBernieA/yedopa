@@ -3,57 +3,25 @@
   class="category-section section section_homepage section_banners"
 >
   <div class="category-card__container">
-    <div class="category-card">
-      <div class="card-banner-item">
-        <div class="card-caption">
-          <h1>Brake</h1>
-          <h2>systems</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            quisquam.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
+    <div
+      class="category-card"
+      [ngStyle]="{ background: category.background, color: category.color}"
+      *ngFor="let category of CATEGORY_DATA"
+    >
+    <div class="card-background-image">
+      <img src="{{category.image}}" alt="">
     </div>
-    <div class="category-card">
+   
       <div class="card-banner-item">
         <div class="card-caption">
-          <h1>Brake</h1>
-          <h2>systems</h2>
+          <h1>{{ category.header_1 }}</h1>
+          <h2>{{ category.header_2 }}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            quisquam.
+            {{ category.description }}
           </p>
           <button>Read more</button>
         </div>
-      </div>
     </div>
-    <div class="category-card">
-      <div class="card-banner-item">
-        <div class="card-caption">
-          <h1>Brake</h1>
-          <h2>systems</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            quisquam.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
-    </div>
-    <div class="category-card">
-      <div class="card-banner-item">
-        <div class="card-caption">
-          <h1>Brake</h1>
-          <h2>systems</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            quisquam.
-          </p>
-          <button>Read more</button>
-        </div>
-      </div>
     </div>
   </div>
 </section>
